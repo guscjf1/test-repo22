@@ -4,9 +4,9 @@ from tkinter import ttk, messagebox
 import pandas as pd
 
 # API 설정
-API_KEY_DRUG = "opnZDPQTZAUUeBlt5P3LByi82Ym2QU7zn/MtG21AiuekgSKDOf4H8+YaRzUbShbYMOf7dUxaI65owqx/ggGhAQ=="
+API_KEY_DRUG = "my_drug_api_key"
 BASE_URL_DRUG = "http://apis.data.go.kr/1471000/DrbEasyDrugInfoService/getDrbEasyDrugList"
-API_KEY_MAPS = "AIzaSyBuRlCO_0mBnnEQuUPdddFBwTs3DTmULvU"
+API_KEY_MAPS = "my_maps_aip_key"
 
 # 데이터프레임 초기화
 pharmacy_data = pd.DataFrame(columns=["이름", "주소", "평점"])
