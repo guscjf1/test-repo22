@@ -1,0 +1,72 @@
+h,m,s = map(int, input().split())
+t = int(input())
+
+s += t % 60
+t = t // 60
+if s >=  60 :
+s -= 60
+m+= 1
+
+m += t % 60
+t = t // 60
+if m >= 60 :
+m -= 60
+h += 1
+
+h += t % 24
+if h >=24 :
+h -= 24
+
+print(h,m,s)
+
+
+
+멜로디 개수 / 곡 개수(A) = 평균값 (I)
+
+평균값 * 곡 개수 = 멜로디 개수
+
+a,b = map(int,input().split(" "))
+print(a*(b-1)+1)
+
+
+@ : *3
+% : +5
+# : -7
+
+case = int(input())
+
+for _ in range(case):
+mars = list(map(str,input().split()))
+answer = 0
+
+for i in range(len(mars)):
+if i==0:
+answer += float(mars[i])
+
+else:
+if mars[i] == "#":
+answer -= 7
+
+elif mars[i] == "%":
+answer += 5
+
+elif mars[i] == "@":
+answer *=3
+
+print("%0.2f" %answer)
+
+
+case = int(input())
+
+for _ in range(case):
+num, string = input().split()
+num = int(num)
+
+result = ""
+for char in string:
+result += char * num
+
+print(result)
+
+
+
