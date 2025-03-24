@@ -2,7 +2,7 @@
 학번 : 202201209
 학과 : 컴퓨터공학부
 
-
+##곽현철
 
 h,m,s = map(int, input().split())
 t = int(input())
